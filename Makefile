@@ -1,4 +1,4 @@
-PROJ_NAME = checkAct12
+PROJ_NAME = checkAct123
 
 BUILD_DIR = Build
 

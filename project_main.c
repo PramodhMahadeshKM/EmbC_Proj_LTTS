@@ -1,5 +1,6 @@
 #include "activity1.h"
 #include "activity2.h"
+#include "activity3.h"
 
 
 int main()
@@ -7,7 +8,8 @@ int main()
     
     pins_init();
     initADC();
-    uint8_t temp;
+    initPWM();
+    uint16_t temp;
 
 
     while(1)
@@ -16,7 +18,8 @@ int main()
         {
             ledON();
             temp=ReadADC(0);
-            _delay_ms(200);
+            PWMoutput(temp);
+
         }
         else
         {
