@@ -23,8 +23,8 @@
  */
 
 #define LedOut (PB0)
-#define LedIn1 (PB1)
-#define LedIn2 (PB2)
+#define LedIn1 (PB6)
+#define LedIn2 (PB7)
 #define PortInUse (PORTB)
 #define DirectionReg (DDRB)
 #define InputFromB (PINB)
