@@ -1,1 +1,0 @@
-@mainpage Activity1 @subpage project_main.c

@@ -1,4 +1,4 @@
-DOXY_FILE = led
+DOXY_FILE = EmbC_PROJ_LTTS
 BUILD_FILE = html
 
 FixPath = $(subst /,\,$1)
