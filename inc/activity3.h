@@ -45,8 +45,9 @@ void initPWM();
 /**
  * @brief to set PWM output depending on input
  * 
- * @param value input from the analog temperature sensor(pot) converted to digital
+ * @param value input from the analog temperature sensor(pot) converted to digital 
+ * @return char temperature(Celsius) displayed through Usart on serial monitor
  */
-void PWMoutput(uint16_t value);
+char PWMoutput(uint16_t value);
 
-#endif
+#endif //activity3.h

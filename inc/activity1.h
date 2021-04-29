@@ -47,4 +47,4 @@ void ledON();
  */
 void ledOFF();
 
-#endif
+#endif //activity1.h

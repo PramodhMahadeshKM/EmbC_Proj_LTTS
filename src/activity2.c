@@ -3,7 +3,7 @@
 void initADC()
 {
    MuxReg=(1<<RefToVcc); // Aref=Avcc, set for 1024
-   CntrlReg=(1<<EnableADC)|(7<<SetFCPU); // Enable AD and Set for FCPU 128
+   CntrlReg=(1<<EnableADC)|(7<<SetFCPU); // Enable ADC and Set for FCPU 128
 }
 
 uint16_t ReadADC(uint8_t select_channel)
@@ -17,5 +17,5 @@ uint16_t ReadADC(uint8_t select_channel)
    while(!(CntrlReg&(1<<ADCInterruptFlag)));
    // clear ADIF by passing 1
    CntrlReg|=(1<<ADCInterruptFlag);
-   return(AtoDvalue);
+   return AtoDvalue;
 }

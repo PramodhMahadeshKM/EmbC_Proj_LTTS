@@ -49,4 +49,4 @@ void initADC();
  */
 uint16_t ReadADC(uint8_t select_channel);
 
-#endif
+#endif // activity2.h

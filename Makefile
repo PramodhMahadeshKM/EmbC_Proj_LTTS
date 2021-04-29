@@ -1,4 +1,4 @@
-PROJ_NAME = checkAct123
+PROJ_NAME = HeatController
 
 BUILD_DIR = Build
 
