@@ -31,7 +31,6 @@
 #define SetBaudHigh (UBRR0H=(ubrr_value>>8)&0x00ff)
 #define SetCharBits (UCSR0C=(1<<UMSEL00)|(1<<UCSZ01)|(1<<UCSZ00))
 #define EnableReceiverAndTransmitter (UCSR0B=(1<<RXEN0)|(1<<TXEN0)|(1<<RXCIE0)|(1<<TXCIE0))
-#define WaitForDataRead (!(UCSR0A&(1<<RXC0)))
 #define ReadOrWriteData (UDR0)
 #define WaitForTransmissionReady (!(UCSR0A&(1<<UDRE0)))
 
@@ -43,12 +42,6 @@
  */
 void initUSART(uint16_t ubrr_value);
 
-/**
- * @brief To read data from serial transmission
- * 
- * @return char stored data from receiving
- */
-char ReadCharUSART();
 
 /**
  * @brief To write data through serial transmission

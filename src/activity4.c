@@ -8,14 +8,6 @@ void initUSART(uint16_t ubrr_value)
     EnableReceiverAndTransmitter;
 }
 
-char ReadCharUSART()
-{
-    while(WaitForDataRead)
-    {
-        //Do nothing
-    }
-    return ReadOrWriteData;
-}
 
 void WriteCharUSART(char data)
 {
