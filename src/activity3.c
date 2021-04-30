@@ -20,7 +20,7 @@ void initPWM()
 char PWMoutput(uint16_t value)
 {
     char display_temp;
-    if(value>=0 && value<=200) 
+    if(value>=1 && value<=200) 
     {
         PWMout=Pwm20percent;
         display_temp=20;
