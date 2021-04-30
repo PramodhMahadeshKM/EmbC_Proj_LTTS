@@ -1,4 +1,4 @@
-DOXY_FILE = EmbC_PROJ_LTTS
+DOXY_FILE = HeatControllerSystem
 BUILD_FILE = html
 
 FixPath = $(subst /,\,$1)

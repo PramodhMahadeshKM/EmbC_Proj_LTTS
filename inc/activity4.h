@@ -23,10 +23,6 @@
 #include <util/delay.h>
 
 
-/**
- * @brief Defining registers and pins as macros
- * 
- */
 #define SetBaudLow (UBRR0L=ubrr_value)
 #define SetBaudHigh (UBRR0H=(ubrr_value>>8)&0x00ff)
 #define SetCharBits (UCSR0C=(1<<UMSEL00)|(1<<UCSZ01)|(1<<UCSZ00))

@@ -1,3 +1,14 @@
+/**
+ * @file project_main.c
+ * @author PramodhMahadeshKM(pramodhmahadesh@gmail.com)
+ * @brief Integration of all the activities for a Heat Controller System
+ * @version 0.1
+ * @date 2021-04-30
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
+
 #include "activity1.h"
 #include "activity2.h"
 #include "activity3.h"
@@ -17,7 +28,7 @@ int main()
 
     while(1)
     {
-        if( !((InputFromB & (1<<LedIn1)) || (InputFromB & (1<<LedIn2))))
+        if( !((InputFromB & (1<<SeatedSwitch)) || (InputFromB & (1<<HeaterOnSwitch))))
         {
             ledON();
             temp=ReadADC(0);

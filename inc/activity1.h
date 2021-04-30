@@ -17,14 +17,10 @@
  */
 #include <avr/io.h>
 
-/**
- * @brief Defining registers and pins as macros
- * 
- */
 
 #define LedOut (PB0)
-#define LedIn1 (PB6)
-#define LedIn2 (PB7)
+#define SeatedSwitch (PB6)
+#define HeaterOnSwitch (PB7)
 #define PortInUse (PORTB)
 #define DirectionReg (DDRB)
 #define InputFromB (PINB)

@@ -1,1 +1,1 @@
-@mainpage Activities @subpage project_main.c
+@mainpage Heat Controller System by Pramodh Mahadesh K M @subpage project_main.c

@@ -22,10 +22,6 @@
  */
 #include <util/delay.h>
 
-/**
- * @brief defining registers as macros 
- * 
- */
 #define RefToVcc (REFS0)
 #define EnableADC (ADEN)
 #define SetFCPU (ADPS0)
